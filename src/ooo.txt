@@ -1,0 +1,902 @@
+{/* {
+                                                imagesPostersNoLanguage.length > 0 &&
+                                                <TabPanel value={value} index={0}>
+                                                    <div className="col-12 d-flex justify-content-center flex-wrap gap-5">
+                                                        {imagesPostersNoLanguage.length > 0 && imagesPostersNoLanguage.map((posters) => (
+                                                            <Card className="col-3 bg-dark text-light border">
+                                                                <img className='col-12' src={posters.file_path ? `https://image.tmdb.org/t/p/w600_and_h900_bestv2${posters.file_path}` : `https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-4-user-grey-d8fe957375e70239d6abdd549fd7568c89281b2179b5f4470e2e12895792dfa5.svg`} />
+                                                                <Card.Header className='border d-flex justify-content-between'>
+                                                                    <span>info</span>
+                                                                    <span><HiLockClosed /></span>
+                                                                </Card.Header>
+                                                                <Card.Body>
+                                                                    <Card.Text className='d-flex flex-column'>
+                                                                        <span>Primary? <MdDisabledByDefault className='rounded-circle' /></span>
+                                                                    </Card.Text>
+                                                                    <Card.Text className='d-flex flex-column'>
+                                                                        <span>Size</span>
+                                                                        <div className='text-info'>{posters.width}x{posters.height} <span className='text-light'>{posters.aspect_ratio > 0.667 ? (<RiCloseCircleFill />) : (<BsCheckCircleFill />)}</span> </div>
+                                                                    </Card.Text>
+                                                                    <Card.Text>
+                                                                        <p className='mb-2'>Language</p>
+                                                                        <Form.Select disabled size="sm">
+                                                                            <option> <p>{posters.iso_639_1 === null && `No Language`}</p></option>
+                                                                        </Form.Select>
+                                                                    </Card.Text>
+                                                                </Card.Body>
+                                                            </Card>
+                                                        ))}
+                                                    </div>
+                                                </TabPanel>
+                                            }
+
+                                            {
+                                                imagesPostersLanguageEn.length > 0 &&
+                                                <TabPanel value={value} index={1}>
+                                                    <div className="col-12 d-flex flex-wrap justify-content-center gap-5">
+                                                        {imagesPostersLanguageEn.length > 0 && imagesPostersLanguageEn.map((posters) => (
+                                                            <Card className="col-3 bg-dark text-light border">
+                                                                <img className='col-12' src={posters.file_path ? `https://image.tmdb.org/t/p/w600_and_h900_bestv2${posters.file_path}` : `https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-4-user-grey-d8fe957375e70239d6abdd549fd7568c89281b2179b5f4470e2e12895792dfa5.svg`} />
+                                                                <Card.Header className='border d-flex justify-content-between'>
+                                                                    <span>info</span>
+                                                                    <span><HiLockClosed /></span>
+                                                                </Card.Header>                                        <Card.Body>
+                                                                    <Card.Text className='d-flex flex-column'>
+                                                                        <span>Primary? <MdDisabledByDefault className='rounded-circle' /></span>
+                                                                    </Card.Text>
+                                                                    <Card.Text className='d-flex flex-column'>
+                                                                        <span>Size</span>
+                                                                        <div className='text-info'>{posters.width}x{posters.height} <span className='text-light'>{posters.aspect_ratio > 0.667 ? (<RiCloseCircleFill />) : (<BsCheckCircleFill />)}</span> </div>
+                                                                    </Card.Text>
+                                                                    <Card.Text>
+                                                                        <p className='mb-2'>Language</p>
+                                                                        <Form.Select disabled size="sm">
+                                                                            <option> <p>{posters.iso_639_1}</p> </option>
+                                                                        </Form.Select>
+                                                                    </Card.Text>
+                                                                </Card.Body>
+                                                            </Card>
+                                                        ))}
+                                                    </div>
+                                                </TabPanel>
+                                            }
+
+                                            {
+                                                imagesPostersLanguageDe.length > 0 &&
+                                                <TabPanel value={value} index={2}>
+                                                    <div className="col-12 d-flex flex-wrap justify-content-center gap-5">
+                                                        {imagesPostersLanguageDe.length > 0 && imagesPostersLanguageDe.map((posters) => (
+                                                            <Card className="col-3 bg-dark text-light border">
+                                                                <img className='col-12' src={posters.file_path ? `https://image.tmdb.org/t/p/w600_and_h900_bestv2${posters.file_path}` : `https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-4-user-grey-d8fe957375e70239d6abdd549fd7568c89281b2179b5f4470e2e12895792dfa5.svg`} />
+                                                                <Card.Header className='border d-flex justify-content-between'>
+                                                                    <span>info</span>
+                                                                    <span><HiLockClosed /></span>
+                                                                </Card.Header>                                        <Card.Body>
+                                                                    <Card.Text className='d-flex flex-column'>
+                                                                        <span>Primary? <MdDisabledByDefault className='rounded-circle' /></span>
+                                                                    </Card.Text>
+                                                                    <Card.Text className='d-flex flex-column'>
+                                                                        <span>Size</span>
+                                                                        <div className='text-info'>{posters.width}x{posters.height} <span className='text-light'>{posters.aspect_ratio > 0.667 ? (<RiCloseCircleFill />) : (<BsCheckCircleFill />)}</span> </div>
+                                                                    </Card.Text>
+                                                                    <Card.Text>
+                                                                        <p className='mb-2'>Language</p>
+                                                                        <Form.Select disabled size="sm">
+                                                                            <option> <p>{posters.iso_639_1}</p> </option>
+                                                                        </Form.Select>
+                                                                    </Card.Text>
+                                                                </Card.Body>
+                                                            </Card>
+                                                        ))}
+                                                    </div>
+                                                </TabPanel>
+                                            }
+
+                                            {
+                                                imagesPostersLanguageFr.length > 0 &&
+                                                <TabPanel value={value} index={3}>
+                                                    <div className="col-12 d-flex flex-wrap justify-content-center gap-5">
+                                                        {imagesPostersLanguageFr.length > 0 && imagesPostersLanguageFr.map((posters) => (
+                                                            <Card className="col-3 bg-dark text-light border">
+                                                                <img className='col-12' src={posters.file_path ? `https://image.tmdb.org/t/p/w600_and_h900_bestv2${posters.file_path}` : `https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-4-user-grey-d8fe957375e70239d6abdd549fd7568c89281b2179b5f4470e2e12895792dfa5.svg`} />
+                                                                <Card.Header className='border d-flex justify-content-between'>
+                                                                    <span>info</span>
+                                                                    <span><HiLockClosed /></span>
+                                                                </Card.Header>                                        <Card.Body>
+                                                                    <Card.Text className='d-flex flex-column'>
+                                                                        <span>Primary? <MdDisabledByDefault className='rounded-circle' /></span>
+                                                                    </Card.Text>
+                                                                    <Card.Text className='d-flex flex-column'>
+                                                                        <span>Size</span>
+                                                                        <div className='text-info'>{posters.width}x{posters.height} <span className='text-light'>{posters.aspect_ratio > 0.667 ? (<RiCloseCircleFill />) : (<BsCheckCircleFill />)}</span> </div>
+                                                                    </Card.Text>
+                                                                    <Card.Text>
+                                                                        <p className='mb-2'>Language</p>
+                                                                        <Form.Select disabled size="sm">
+                                                                            <option> <p>{posters.iso_639_1}</p> </option>
+                                                                        </Form.Select>
+                                                                    </Card.Text>
+                                                                </Card.Body>
+                                                            </Card>
+                                                        ))}
+                                                    </div>
+                                                </TabPanel>
+                                            }
+
+                                            {
+                                                imagesPostersLanguageIt.length > 0 &&
+                                                <TabPanel value={value} index={4}>
+                                                    <div className="col-12 d-flex flex-wrap justify-content-center gap-5">
+                                                        {imagesPostersLanguageIt.length > 0 && imagesPostersLanguageIt.map((posters) => (
+                                                            <Card className="col-3 bg-dark text-light border">
+                                                                <img className='col-12' src={posters.file_path ? `https://image.tmdb.org/t/p/w600_and_h900_bestv2${posters.file_path}` : `https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-4-user-grey-d8fe957375e70239d6abdd549fd7568c89281b2179b5f4470e2e12895792dfa5.svg`} />
+                                                                <Card.Header className='border d-flex justify-content-between'>
+                                                                    <span>info</span>
+                                                                    <span><HiLockClosed /></span>
+                                                                </Card.Header>                                        <Card.Body>
+                                                                    <Card.Text className='d-flex flex-column'>
+                                                                        <span>Primary? <MdDisabledByDefault className='rounded-circle' /></span>
+                                                                    </Card.Text>
+                                                                    <Card.Text className='d-flex flex-column'>
+                                                                        <span>Size</span>
+                                                                        <div className='text-info'>{posters.width}x{posters.height} <span className='text-light'>{posters.aspect_ratio > 0.667 ? (<RiCloseCircleFill />) : (<BsCheckCircleFill />)}</span> </div>
+                                                                    </Card.Text>
+                                                                    <Card.Text>
+                                                                        <p className='mb-2'>Language</p>
+                                                                        <Form.Select disabled size="sm">
+                                                                            <option> <p>{posters.iso_639_1}</p> </option>
+                                                                        </Form.Select>
+                                                                    </Card.Text>
+                                                                </Card.Body>
+                                                            </Card>
+                                                        ))}
+                                                    </div>
+                                                </TabPanel>
+                                            }
+
+                                            {
+                                                imagesPostersLanguageSq.length > 0 &&
+                                                <TabPanel value={value} index={5}>
+                                                    <div className="col-12 d-flex flex-wrap justify-content-center gap-5">
+                                                        {imagesPostersLanguageSq.length > 0 && imagesPostersLanguageSq.map((posters) => (
+                                                            <Card className="col-3 bg-dark text-light border">
+                                                                <img className='col-12' src={posters.file_path ? `https://image.tmdb.org/t/p/w600_and_h900_bestv2${posters.file_path}` : `https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-4-user-grey-d8fe957375e70239d6abdd549fd7568c89281b2179b5f4470e2e12895792dfa5.svg`} />
+                                                                <Card.Header className='border d-flex justify-content-between'>
+                                                                    <span>info</span>
+                                                                    <span><HiLockClosed /></span>
+                                                                </Card.Header>                                        <Card.Body>
+                                                                    <Card.Text className='d-flex flex-column'>
+                                                                        <span>Primary? <MdDisabledByDefault className='rounded-circle' /></span>
+                                                                    </Card.Text>
+                                                                    <Card.Text className='d-flex flex-column'>
+                                                                        <span>Size</span>
+                                                                        <div className='text-info'>{posters.width}x{posters.height} <span className='text-light'>{posters.aspect_ratio > 0.667 ? (<RiCloseCircleFill />) : (<BsCheckCircleFill />)}</span> </div>
+                                                                    </Card.Text>
+                                                                    <Card.Text>
+                                                                        <p className='mb-2'>Language</p>
+                                                                        <Form.Select disabled size="sm">
+                                                                            <option> <p>{posters.iso_639_1}</p> </option>
+                                                                        </Form.Select>
+                                                                    </Card.Text>
+                                                                </Card.Body>
+                                                            </Card>
+                                                        ))}
+                                                    </div>
+                                                </TabPanel>
+                                            }
+
+                                            {
+                                                imagesPostersLanguageBg.length > 0 &&
+                                                <TabPanel value={value} index={6}>
+                                                    <div className="col-12 d-flex flex-wrap justify-content-center gap-5">
+                                                        {imagesPostersLanguageBg.length > 0 && imagesPostersLanguageBg.map((posters) => (
+                                                            <Card className="col-3 bg-dark text-light border">
+                                                                <img className='col-12' src={posters.file_path ? `https://image.tmdb.org/t/p/w600_and_h900_bestv2${posters.file_path}` : `https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-4-user-grey-d8fe957375e70239d6abdd549fd7568c89281b2179b5f4470e2e12895792dfa5.svg`} />
+                                                                <Card.Header className='border d-flex justify-content-between'>
+                                                                    <span>info</span>
+                                                                    <span><HiLockClosed /></span>
+                                                                </Card.Header>                                        <Card.Body>
+                                                                    <Card.Text className='d-flex flex-column'>
+                                                                        <span>Primary? <MdDisabledByDefault className='rounded-circle' /></span>
+                                                                    </Card.Text>
+                                                                    <Card.Text className='d-flex flex-column'>
+                                                                        <span>Size</span>
+                                                                        <div className='text-info'>{posters.width}x{posters.height} <span className='text-light'>{posters.aspect_ratio > 0.667 ? (<RiCloseCircleFill />) : (<BsCheckCircleFill />)}</span> </div>
+                                                                    </Card.Text>
+                                                                    <Card.Text>
+                                                                        <p className='mb-2'>Language</p>
+                                                                        <Form.Select disabled size="sm">
+                                                                            <option> <p>{posters.iso_639_1}</p> </option>
+                                                                        </Form.Select>
+                                                                    </Card.Text>
+                                                                </Card.Body>
+                                                            </Card>
+                                                        ))}
+                                                    </div>
+                                                </TabPanel>
+                                            }
+
+                                            {
+                                                imagesPostersLanguageZh.length > 0 &&
+                                                <TabPanel value={value} index={7}>
+                                                    <div className="col-12 d-flex flex-wrap justify-content-center gap-5">
+                                                        {imagesPostersLanguageZh.length > 0 && imagesPostersLanguageZh.map((posters) => (
+                                                            <Card className="col-3 bg-dark text-light border">
+                                                                <img className='col-12' src={posters.file_path ? `https://image.tmdb.org/t/p/w600_and_h900_bestv2${posters.file_path}` : `https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-4-user-grey-d8fe957375e70239d6abdd549fd7568c89281b2179b5f4470e2e12895792dfa5.svg`} />
+                                                                <Card.Header className='border d-flex justify-content-between'>
+                                                                    <span>info</span>
+                                                                    <span><HiLockClosed /></span>
+                                                                </Card.Header>                                        <Card.Body>
+                                                                    <Card.Text className='d-flex flex-column'>
+                                                                        <span>Primary? <MdDisabledByDefault className='rounded-circle' /></span>
+                                                                    </Card.Text>
+                                                                    <Card.Text className='d-flex flex-column'>
+                                                                        <span>Size</span>
+                                                                        <div className='text-info'>{posters.width}x{posters.height} <span className='text-light'>{posters.aspect_ratio > 0.667 ? (<RiCloseCircleFill />) : (<BsCheckCircleFill />)}</span> </div>
+                                                                    </Card.Text>
+                                                                    <Card.Text>
+                                                                        <p className='mb-2'>Language</p>
+                                                                        <Form.Select disabled size="sm">
+                                                                            <option> <p>{posters.iso_639_1}</p> </option>
+                                                                        </Form.Select>
+                                                                    </Card.Text>
+                                                                </Card.Body>
+                                                            </Card>
+                                                        ))}
+                                                    </div>
+                                                </TabPanel>
+                                            }
+
+                                            {
+                                                imagesPostersLanguageCs.length > 0 &&
+                                                <TabPanel value={value} index={8}>
+                                                    <div className="col-12 d-flex flex-wrap justify-content-center gap-5">
+                                                        {imagesPostersLanguageCs.length > 0 && imagesPostersLanguageCs.map((posters) => (
+                                                            <Card className="col-3 bg-dark text-light border">
+                                                                <img className='col-12' src={posters.file_path ? `https://image.tmdb.org/t/p/w600_and_h900_bestv2${posters.file_path}` : `https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-4-user-grey-d8fe957375e70239d6abdd549fd7568c89281b2179b5f4470e2e12895792dfa5.svg`} />
+                                                                <Card.Header className='border d-flex justify-content-between'>
+                                                                    <span>info</span>
+                                                                    <span><HiLockClosed /></span>
+                                                                </Card.Header>                                        <Card.Body>
+                                                                    <Card.Text className='d-flex flex-column'>
+                                                                        <span>Primary? <MdDisabledByDefault className='rounded-circle' /></span>
+                                                                    </Card.Text>
+                                                                    <Card.Text className='d-flex flex-column'>
+                                                                        <span>Size</span>
+                                                                        <div className='text-info'>{posters.width}x{posters.height} <span className='text-light'>{posters.aspect_ratio > 0.667 ? (<RiCloseCircleFill />) : (<BsCheckCircleFill />)}</span> </div>
+                                                                    </Card.Text>
+                                                                    <Card.Text>
+                                                                        <p className='mb-2'>Language</p>
+                                                                        <Form.Select disabled size="sm">
+                                                                            <option> <p>{posters.iso_639_1}</p> </option>
+                                                                        </Form.Select>
+                                                                    </Card.Text>
+                                                                </Card.Body>
+                                                            </Card>
+                                                        ))}
+                                                    </div>
+                                                </TabPanel>
+                                            }
+
+                                            {
+                                                imagesPostersLanguageDa.length > 0 &&
+                                                <TabPanel value={value} index={9}>
+                                                    <div className="col-12 d-flex flex-wrap justify-content-center gap-5">
+                                                        {imagesPostersLanguageDa.length > 0 && imagesPostersLanguageDa.map((posters) => (
+                                                            <Card className="col-3 bg-dark text-light border">
+                                                                <img className='col-12' src={posters.file_path ? `https://image.tmdb.org/t/p/w600_and_h900_bestv2${posters.file_path}` : `https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-4-user-grey-d8fe957375e70239d6abdd549fd7568c89281b2179b5f4470e2e12895792dfa5.svg`} />
+                                                                <Card.Header className='border d-flex justify-content-between'>
+                                                                    <span>info</span>
+                                                                    <span><HiLockClosed /></span>
+                                                                </Card.Header>                                        <Card.Body>
+                                                                    <Card.Text className='d-flex flex-column'>
+                                                                        <span>Primary? <MdDisabledByDefault className='rounded-circle' /></span>
+                                                                    </Card.Text>
+                                                                    <Card.Text className='d-flex flex-column'>
+                                                                        <span>Size</span>
+                                                                        <div className='text-info'>{posters.width}x{posters.height} <span className='text-light'>{posters.aspect_ratio > 0.667 ? (<RiCloseCircleFill />) : (<BsCheckCircleFill />)}</span> </div>
+                                                                    </Card.Text>
+                                                                    <Card.Text>
+                                                                        <p className='mb-2'>Language</p>
+                                                                        <Form.Select disabled size="sm">
+                                                                            <option> <p>{posters.iso_639_1}</p> </option>
+                                                                        </Form.Select>
+                                                                    </Card.Text>
+                                                                </Card.Body>
+                                                            </Card>
+                                                        ))}
+                                                    </div>
+                                                </TabPanel>
+                                            }
+
+                                            {
+                                                imagesPostersLanguageEl.length > 0 &&
+                                                <TabPanel value={value} index={10}>
+                                                    <div className="col-12 d-flex flex-wrap justify-content-center gap-5">
+                                                        {imagesPostersLanguageEl.length > 0 && imagesPostersLanguageEl.map((posters) => (
+                                                            <Card className="col-3 bg-dark text-light border">
+                                                                <img className='col-12' src={posters.file_path ? `https://image.tmdb.org/t/p/w600_and_h900_bestv2${posters.file_path}` : `https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-4-user-grey-d8fe957375e70239d6abdd549fd7568c89281b2179b5f4470e2e12895792dfa5.svg`} />
+                                                                <Card.Header className='border d-flex justify-content-between'>
+                                                                    <span>info</span>
+                                                                    <span><HiLockClosed /></span>
+                                                                </Card.Header>                                        <Card.Body>
+                                                                    <Card.Text className='d-flex flex-column'>
+                                                                        <span>Primary? <MdDisabledByDefault className='rounded-circle' /></span>
+                                                                    </Card.Text>
+                                                                    <Card.Text className='d-flex flex-column'>
+                                                                        <span>Size</span>
+                                                                        <div className='text-info'>{posters.width}x{posters.height} <span className='text-light'>{posters.aspect_ratio > 0.667 ? (<RiCloseCircleFill />) : (<BsCheckCircleFill />)}</span> </div>
+                                                                    </Card.Text>
+                                                                    <Card.Text>
+                                                                        <p className='mb-2'>Language</p>
+                                                                        <Form.Select disabled size="sm">
+                                                                            <option> <p>{posters.iso_639_1}</p> </option>
+                                                                        </Form.Select>
+                                                                    </Card.Text>
+                                                                </Card.Body>
+                                                            </Card>
+                                                        ))}
+                                                    </div>
+                                                </TabPanel>
+                                            }
+
+                                            {
+                                                imagesPostersLanguageHe.length > 0 &&
+                                                <TabPanel value={value} index={11}>
+                                                    <div className="col-12 d-flex flex-wrap justify-content-center gap-5">
+                                                        {imagesPostersLanguageHe.length > 0 && imagesPostersLanguageHe.map((posters) => (
+                                                            <Card className="col-3 bg-dark text-light border">
+                                                                <img className='col-12' src={posters.file_path ? `https://image.tmdb.org/t/p/w600_and_h900_bestv2${posters.file_path}` : `https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-4-user-grey-d8fe957375e70239d6abdd549fd7568c89281b2179b5f4470e2e12895792dfa5.svg`} />
+                                                                <Card.Header className='border d-flex justify-content-between'>
+                                                                    <span>info</span>
+                                                                    <span><HiLockClosed /></span>
+                                                                </Card.Header>                                        <Card.Body>
+                                                                    <Card.Text className='d-flex flex-column'>
+                                                                        <span>Primary? <MdDisabledByDefault className='rounded-circle' /></span>
+                                                                    </Card.Text>
+                                                                    <Card.Text className='d-flex flex-column'>
+                                                                        <span>Size</span>
+                                                                        <div className='text-info'>{posters.width}x{posters.height} <span className='text-light'>{posters.aspect_ratio > 0.667 ? (<RiCloseCircleFill />) : (<BsCheckCircleFill />)}</span> </div>
+                                                                    </Card.Text>
+                                                                    <Card.Text>
+                                                                        <p className='mb-2'>Language</p>
+                                                                        <Form.Select disabled size="sm">
+                                                                            <option> <p>{posters.iso_639_1}</p> </option>
+                                                                        </Form.Select>
+                                                                    </Card.Text>
+                                                                </Card.Body>
+                                                            </Card>
+                                                        ))}
+                                                    </div>
+                                                </TabPanel>
+                                            }
+
+                                            {
+                                                imagesPostersLanguageHu.length > 0 &&
+                                                <TabPanel value={value} index={12}>
+                                                    <div className="col-12 d-flex flex-wrap justify-content-center gap-5">
+                                                        {imagesPostersLanguageHu.length > 0 && imagesPostersLanguageHu.map((posters) => (
+                                                            <Card className="col-3 bg-dark text-light border">
+                                                                <img className='col-12' src={posters.file_path ? `https://image.tmdb.org/t/p/w600_and_h900_bestv2${posters.file_path}` : `https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-4-user-grey-d8fe957375e70239d6abdd549fd7568c89281b2179b5f4470e2e12895792dfa5.svg`} />
+                                                                <Card.Header className='border d-flex justify-content-between'>
+                                                                    <span>info</span>
+                                                                    <span><HiLockClosed /></span>
+                                                                </Card.Header>                                        <Card.Body>
+                                                                    <Card.Text className='d-flex flex-column'>
+                                                                        <span>Primary? <MdDisabledByDefault className='rounded-circle' /></span>
+                                                                    </Card.Text>
+                                                                    <Card.Text className='d-flex flex-column'>
+                                                                        <span>Size</span>
+                                                                        <div className='text-info'>{posters.width}x{posters.height} <span className='text-light'>{posters.aspect_ratio > 0.667 ? (<RiCloseCircleFill />) : (<BsCheckCircleFill />)}</span> </div>
+                                                                    </Card.Text>
+                                                                    <Card.Text>
+                                                                        <p className='mb-2'>Language</p>
+                                                                        <Form.Select disabled size="sm">
+                                                                            <option> <p>{posters.iso_639_1}</p> </option>
+                                                                        </Form.Select>
+                                                                    </Card.Text>
+                                                                </Card.Body>
+                                                            </Card>
+                                                        ))}
+                                                    </div>
+                                                </TabPanel>
+                                            }
+
+
+                                            {
+                                                imagesPostersLanguageJa.length > 0 &&
+                                                <TabPanel value={value} index={13}>
+                                                    <div className="col-12 d-flex flex-wrap justify-content-center gap-5">
+                                                        {imagesPostersLanguageJa.length > 0 && imagesPostersLanguageJa.map((posters) => (
+                                                            <Card className="col-3 bg-dark text-light border">
+                                                                <img className='col-12' src={posters.file_path ? `https://image.tmdb.org/t/p/w600_and_h900_bestv2${posters.file_path}` : `https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-4-user-grey-d8fe957375e70239d6abdd549fd7568c89281b2179b5f4470e2e12895792dfa5.svg`} />
+                                                                <Card.Header className='border d-flex justify-content-between'>
+                                                                    <span>info</span>
+                                                                    <span><HiLockClosed /></span>
+                                                                </Card.Header>                                        <Card.Body>
+                                                                    <Card.Text className='d-flex flex-column'>
+                                                                        <span>Primary? <MdDisabledByDefault className='rounded-circle' /></span>
+                                                                    </Card.Text>
+                                                                    <Card.Text className='d-flex flex-column'>
+                                                                        <span>Size</span>
+                                                                        <div className='text-info'>{posters.width}x{posters.height} <span className='text-light'>{posters.aspect_ratio > 0.667 ? (<RiCloseCircleFill />) : (<BsCheckCircleFill />)}</span> </div>
+                                                                    </Card.Text>
+                                                                    <Card.Text>
+                                                                        <p className='mb-2'>Language</p>
+                                                                        <Form.Select disabled size="sm">
+                                                                            <option> <p>{posters.iso_639_1}</p> </option>
+                                                                        </Form.Select>
+                                                                    </Card.Text>
+                                                                </Card.Body>
+                                                            </Card>
+                                                        ))}
+                                                    </div>
+                                                </TabPanel>
+                                            }
+
+
+                                            {
+                                                imagesPostersLanguageKo.length > 0 &&
+                                                <TabPanel value={value} index={14}>
+                                                    <div className="col-12 d-flex flex-wrap justify-content-center gap-5">
+                                                        {imagesPostersLanguageKo.length > 0 && imagesPostersLanguageKo.map((posters) => (
+                                                            <Card className="col-3 bg-dark text-light border">
+                                                                <img className='col-12' src={posters.file_path ? `https://image.tmdb.org/t/p/w600_and_h900_bestv2${posters.file_path}` : `https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-4-user-grey-d8fe957375e70239d6abdd549fd7568c89281b2179b5f4470e2e12895792dfa5.svg`} />
+                                                                <Card.Header className='border d-flex justify-content-between'>
+                                                                    <span>info</span>
+                                                                    <span><HiLockClosed /></span>
+                                                                </Card.Header>                                        <Card.Body>
+                                                                    <Card.Text className='d-flex flex-column'>
+                                                                        <span>Primary? <MdDisabledByDefault className='rounded-circle' /></span>
+                                                                    </Card.Text>
+                                                                    <Card.Text className='d-flex flex-column'>
+                                                                        <span>Size</span>
+                                                                        <div className='text-info'>{posters.width}x{posters.height} <span className='text-light'>{posters.aspect_ratio > 0.667 ? (<RiCloseCircleFill />) : (<BsCheckCircleFill />)}</span> </div>
+                                                                    </Card.Text>
+                                                                    <Card.Text>
+                                                                        <p className='mb-2'>Language</p>
+                                                                        <Form.Select disabled size="sm">
+                                                                            <option> <p>{posters.iso_639_1}</p> </option>
+                                                                        </Form.Select>
+                                                                    </Card.Text>
+                                                                </Card.Body>
+                                                            </Card>
+                                                        ))}
+                                                    </div>
+                                                </TabPanel>
+                                            }
+
+                                            {
+                                                imagesPostersLanguageLv.length > 0 &&
+                                                <TabPanel value={value} index={15}>
+                                                    <div className="col-12 d-flex flex-wrap justify-content-center gap-5">
+                                                        {imagesPostersLanguageLv.length > 0 && imagesPostersLanguageLv.map((posters) => (
+                                                            <Card className="col-3 bg-dark text-light border">
+                                                                <img className='col-12' src={posters.file_path ? `https://image.tmdb.org/t/p/w600_and_h900_bestv2${posters.file_path}` : `https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-4-user-grey-d8fe957375e70239d6abdd549fd7568c89281b2179b5f4470e2e12895792dfa5.svg`} />
+                                                                <Card.Header className='border d-flex justify-content-between'>
+                                                                    <span>info</span>
+                                                                    <span><HiLockClosed /></span>
+                                                                </Card.Header>                                        <Card.Body>
+                                                                    <Card.Text className='d-flex flex-column'>
+                                                                        <span>Primary? <MdDisabledByDefault className='rounded-circle' /></span>
+                                                                    </Card.Text>
+                                                                    <Card.Text className='d-flex flex-column'>
+                                                                        <span>Size</span>
+                                                                        <div className='text-info'>{posters.width}x{posters.height} <span className='text-light'>{posters.aspect_ratio > 0.667 ? (<RiCloseCircleFill />) : (<BsCheckCircleFill />)}</span> </div>
+                                                                    </Card.Text>
+                                                                    <Card.Text>
+                                                                        <p className='mb-2'>Language</p>
+                                                                        <Form.Select disabled size="sm">
+                                                                            <option> <p>{posters.iso_639_1}</p> </option>
+                                                                        </Form.Select>
+                                                                    </Card.Text>
+                                                                </Card.Body>
+                                                            </Card>
+                                                        ))}
+                                                    </div>
+                                                </TabPanel>
+                                            }
+
+                                            {
+                                                imagesPostersLanguageLt.length > 0 &&
+                                                <TabPanel value={value} index={16}>
+                                                    <div className="col-12 d-flex flex-wrap justify-content-center gap-5">
+                                                        {imagesPostersLanguageLt.length > 0 && imagesPostersLanguageLt.map((posters) => (
+                                                            <Card className="col-3 bg-dark text-light border">
+                                                                <img className='col-12' src={posters.file_path ? `https://image.tmdb.org/t/p/w600_and_h900_bestv2${posters.file_path}` : `https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-4-user-grey-d8fe957375e70239d6abdd549fd7568c89281b2179b5f4470e2e12895792dfa5.svg`} />
+                                                                <Card.Header className='border d-flex justify-content-between'>
+                                                                    <span>info</span>
+                                                                    <span><HiLockClosed /></span>
+                                                                </Card.Header>                                        <Card.Body>
+                                                                    <Card.Text className='d-flex flex-column'>
+                                                                        <span>Primary? <MdDisabledByDefault className='rounded-circle' /></span>
+                                                                    </Card.Text>
+                                                                    <Card.Text className='d-flex flex-column'>
+                                                                        <span>Size</span>
+                                                                        <div className='text-info'>{posters.width}x{posters.height} <span className='text-light'>{posters.aspect_ratio > 0.667 ? (<RiCloseCircleFill />) : (<BsCheckCircleFill />)}</span> </div>
+                                                                    </Card.Text>
+                                                                    <Card.Text>
+                                                                        <p className='mb-2'>Language</p>
+                                                                        <Form.Select disabled size="sm">
+                                                                            <option> <p>{posters.iso_639_1}</p> </option>
+                                                                        </Form.Select>
+                                                                    </Card.Text>
+                                                                </Card.Body>
+                                                            </Card>
+                                                        ))}
+                                                    </div>
+                                                </TabPanel>
+                                            }
+
+                                            {
+                                                imagesPostersLanguageMk.length > 0 &&
+                                                <TabPanel value={value} index={17}>
+                                                    <div className="col-12 d-flex flex-wrap justify-content-center gap-5">
+                                                        {imagesPostersLanguageMk.length > 0 && imagesPostersLanguageMk.map((posters) => (
+                                                            <Card className="col-3 bg-dark text-light border">
+                                                                <img className='col-12' src={posters.file_path ? `https://image.tmdb.org/t/p/w600_and_h900_bestv2${posters.file_path}` : `https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-4-user-grey-d8fe957375e70239d6abdd549fd7568c89281b2179b5f4470e2e12895792dfa5.svg`} />
+                                                                <Card.Header className='border d-flex justify-content-between'>
+                                                                    <span>info</span>
+                                                                    <span><HiLockClosed /></span>
+                                                                </Card.Header>                                        <Card.Body>
+                                                                    <Card.Text className='d-flex flex-column'>
+                                                                        <span>Primary? <MdDisabledByDefault className='rounded-circle' /></span>
+                                                                    </Card.Text>
+                                                                    <Card.Text className='d-flex flex-column'>
+                                                                        <span>Size</span>
+                                                                        <div className='text-info'>{posters.width}x{posters.height} <span className='text-light'>{posters.aspect_ratio > 0.667 ? (<RiCloseCircleFill />) : (<BsCheckCircleFill />)}</span> </div>
+                                                                    </Card.Text>
+                                                                    <Card.Text>
+                                                                        <p className='mb-2'>Language</p>
+                                                                        <Form.Select disabled size="sm">
+                                                                            <option> <p>{posters.iso_639_1}</p> </option>
+                                                                        </Form.Select>
+                                                                    </Card.Text>
+                                                                </Card.Body>
+                                                            </Card>
+                                                        ))}
+                                                    </div>
+                                                </TabPanel>
+                                            }
+
+                                            {
+                                                imagesPostersLanguagePl.length > 0 &&
+                                                <TabPanel value={value} index={18}>
+                                                    <div className="col-12 d-flex flex-wrap justify-content-center gap-5">
+                                                        {imagesPostersLanguagePl.length > 0 && imagesPostersLanguagePl.map((posters) => (
+                                                            <Card className="col-3 bg-dark text-light border">
+                                                                <img className='col-12' src={posters.file_path ? `https://image.tmdb.org/t/p/w600_and_h900_bestv2${posters.file_path}` : `https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-4-user-grey-d8fe957375e70239d6abdd549fd7568c89281b2179b5f4470e2e12895792dfa5.svg`} />
+                                                                <Card.Header className='border d-flex justify-content-between'>
+                                                                    <span>info</span>
+                                                                    <span><HiLockClosed /></span>
+                                                                </Card.Header>                                        <Card.Body>
+                                                                    <Card.Text className='d-flex flex-column'>
+                                                                        <span>Primary? <MdDisabledByDefault className='rounded-circle' /></span>
+                                                                    </Card.Text>
+                                                                    <Card.Text className='d-flex flex-column'>
+                                                                        <span>Size</span>
+                                                                        <div className='text-info'>{posters.width}x{posters.height} <span className='text-light'>{posters.aspect_ratio > 0.667 ? (<RiCloseCircleFill />) : (<BsCheckCircleFill />)}</span> </div>
+                                                                    </Card.Text>
+                                                                    <Card.Text>
+                                                                        <p className='mb-2'>Language</p>
+                                                                        <Form.Select disabled size="sm">
+                                                                            <option> <p>{posters.iso_639_1}</p> </option>
+                                                                        </Form.Select>
+                                                                    </Card.Text>
+                                                                </Card.Body>
+                                                            </Card>
+                                                        ))}
+                                                    </div>
+                                                </TabPanel>
+                                            }
+
+                                            {
+                                                imagesPostersLanguagePt.length > 0 &&
+                                                <TabPanel value={value} index={19}>
+                                                    <div className="col-12 d-flex flex-wrap justify-content-center gap-5">
+                                                        {imagesPostersLanguagePt.length > 0 && imagesPostersLanguagePt.map((posters) => (
+                                                            <Card className="col-3 bg-dark text-light border">
+                                                                <img className='col-12' src={posters.file_path ? `https://image.tmdb.org/t/p/w600_and_h900_bestv2${posters.file_path}` : `https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-4-user-grey-d8fe957375e70239d6abdd549fd7568c89281b2179b5f4470e2e12895792dfa5.svg`} />
+                                                                <Card.Header className='border d-flex justify-content-between'>
+                                                                    <span>info</span>
+                                                                    <span><HiLockClosed /></span>
+                                                                </Card.Header>                                        <Card.Body>
+                                                                    <Card.Text className='d-flex flex-column'>
+                                                                        <span>Primary? <MdDisabledByDefault className='rounded-circle' /></span>
+                                                                    </Card.Text>
+                                                                    <Card.Text className='d-flex flex-column'>
+                                                                        <span>Size</span>
+                                                                        <div className='text-info'>{posters.width}x{posters.height} <span className='text-light'>{posters.aspect_ratio > 0.667 ? (<RiCloseCircleFill />) : (<BsCheckCircleFill />)}</span> </div>
+                                                                    </Card.Text>
+                                                                    <Card.Text>
+                                                                        <p className='mb-2'>Language</p>
+                                                                        <Form.Select disabled size="sm">
+                                                                            <option> <p>{posters.iso_639_1}</p> </option>
+                                                                        </Form.Select>
+                                                                    </Card.Text>
+                                                                </Card.Body>
+                                                            </Card>
+                                                        ))}
+                                                    </div>
+                                                </TabPanel>
+                                            }
+
+                                            {
+                                                imagesPostersLanguageRo.length > 0 &&
+                                                <TabPanel value={value} index={20}>
+                                                    <div className="col-12 d-flex flex-wrap justify-content-center gap-5">
+                                                        {imagesPostersLanguageRo.length > 0 && imagesPostersLanguageRo.map((posters) => (
+                                                            <Card className="col-3 bg-dark text-light border">
+                                                                <img className='col-12' src={posters.file_path ? `https://image.tmdb.org/t/p/w600_and_h900_bestv2${posters.file_path}` : `https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-4-user-grey-d8fe957375e70239d6abdd549fd7568c89281b2179b5f4470e2e12895792dfa5.svg`} />
+                                                                <Card.Header className='border d-flex justify-content-between'>
+                                                                    <span>info</span>
+                                                                    <span><HiLockClosed /></span>
+                                                                </Card.Header>                                        <Card.Body>
+                                                                    <Card.Text className='d-flex flex-column'>
+                                                                        <span>Primary? <MdDisabledByDefault className='rounded-circle' /></span>
+                                                                    </Card.Text>
+                                                                    <Card.Text className='d-flex flex-column'>
+                                                                        <span>Size</span>
+                                                                        <div className='text-info'>{posters.width}x{posters.height} <span className='text-light'>{posters.aspect_ratio > 0.667 ? (<RiCloseCircleFill />) : (<BsCheckCircleFill />)}</span> </div>
+                                                                    </Card.Text>
+                                                                    <Card.Text>
+                                                                        <p className='mb-2'>Language</p>
+                                                                        <Form.Select disabled size="sm">
+                                                                            <option> <p>{posters.iso_639_1}</p> </option>
+                                                                        </Form.Select>
+                                                                    </Card.Text>
+                                                                </Card.Body>
+                                                            </Card>
+                                                        ))}
+                                                    </div>
+                                                </TabPanel>
+                                            }
+
+                                            {
+                                                imagesPostersLanguageRu.length > 0 &&
+                                                <TabPanel value={value} index={21}>
+                                                    <div className="col-12 d-flex flex-wrap justify-content-center gap-5">
+                                                        {imagesPostersLanguageRu.length > 0 && imagesPostersLanguageRu.map((posters) => (
+                                                            <Card className="col-3 bg-dark text-light border">
+                                                                <img className='col-12' src={posters.file_path ? `https://image.tmdb.org/t/p/w600_and_h900_bestv2${posters.file_path}` : `https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-4-user-grey-d8fe957375e70239d6abdd549fd7568c89281b2179b5f4470e2e12895792dfa5.svg`} />
+                                                                <Card.Header className='border d-flex justify-content-between'>
+                                                                    <span>info</span>
+                                                                    <span><HiLockClosed /></span>
+                                                                </Card.Header>                                        <Card.Body>
+                                                                    <Card.Text className='d-flex flex-column'>
+                                                                        <span>Primary? <MdDisabledByDefault className='rounded-circle' /></span>
+                                                                    </Card.Text>
+                                                                    <Card.Text className='d-flex flex-column'>
+                                                                        <span>Size</span>
+                                                                        <div className='text-info'>{posters.width}x{posters.height} <span className='text-light'>{posters.aspect_ratio > 0.667 ? (<RiCloseCircleFill />) : (<BsCheckCircleFill />)}</span> </div>
+                                                                    </Card.Text>
+                                                                    <Card.Text>
+                                                                        <p className='mb-2'>Language</p>
+                                                                        <Form.Select disabled size="sm">
+                                                                            <option> <p>{posters.iso_639_1}</p> </option>
+                                                                        </Form.Select>
+                                                                    </Card.Text>
+                                                                </Card.Body>
+                                                            </Card>
+                                                        ))}
+                                                    </div>
+                                                </TabPanel>
+                                            }
+
+                                            {
+                                                imagesPostersLanguageSk.length > 0 &&
+                                                <TabPanel value={value} index={22}>
+                                                    <div className="col-12 d-flex flex-wrap justify-content-center gap-5">
+                                                        {imagesPostersLanguageSk.length > 0 && imagesPostersLanguageSk.map((posters) => (
+                                                            <Card className="col-3 bg-dark text-light border">
+                                                                <img className='col-12' src={posters.file_path ? `https://image.tmdb.org/t/p/w600_and_h900_bestv2${posters.file_path}` : `https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-4-user-grey-d8fe957375e70239d6abdd549fd7568c89281b2179b5f4470e2e12895792dfa5.svg`} />
+                                                                <Card.Header className='border d-flex justify-content-between'>
+                                                                    <span>info</span>
+                                                                    <span><HiLockClosed /></span>
+                                                                </Card.Header>                                        <Card.Body>
+                                                                    <Card.Text className='d-flex flex-column'>
+                                                                        <span>Primary? <MdDisabledByDefault className='rounded-circle' /></span>
+                                                                    </Card.Text>
+                                                                    <Card.Text className='d-flex flex-column'>
+                                                                        <span>Size</span>
+                                                                        <div className='text-info'>{posters.width}x{posters.height} <span className='text-light'>{posters.aspect_ratio > 0.667 ? (<RiCloseCircleFill />) : (<BsCheckCircleFill />)}</span> </div>
+                                                                    </Card.Text>
+                                                                    <Card.Text>
+                                                                        <p className='mb-2'>Language</p>
+                                                                        <Form.Select disabled size="sm">
+                                                                            <option> <p>{posters.iso_639_1}</p> </option>
+                                                                        </Form.Select>
+                                                                    </Card.Text>
+                                                                </Card.Body>
+                                                            </Card>
+                                                        ))}
+                                                    </div>
+                                                </TabPanel>
+                                            }
+
+                                            {
+                                                imagesPostersLanguageEs.length > 0 &&
+                                                <TabPanel value={value} index={23}>
+                                                    <div className="col-12 d-flex flex-wrap justify-content-center gap-5">
+                                                        {imagesPostersLanguageEs.length > 0 && imagesPostersLanguageEs.map((posters) => (
+                                                            <Card className="col-3 bg-dark text-light border">
+                                                                <img className='col-12' src={posters.file_path ? `https://image.tmdb.org/t/p/w600_and_h900_bestv2${posters.file_path}` : `https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-4-user-grey-d8fe957375e70239d6abdd549fd7568c89281b2179b5f4470e2e12895792dfa5.svg`} />
+                                                                <Card.Header className='border d-flex justify-content-between'>
+                                                                    <span>info</span>
+                                                                    <span><HiLockClosed /></span>
+                                                                </Card.Header>                                        <Card.Body>
+                                                                    <Card.Text className='d-flex flex-column'>
+                                                                        <span>Primary? <MdDisabledByDefault className='rounded-circle' /></span>
+                                                                    </Card.Text>
+                                                                    <Card.Text className='d-flex flex-column'>
+                                                                        <span>Size</span>
+                                                                        <div className='text-info'>{posters.width}x{posters.height} <span className='text-light'>{posters.aspect_ratio > 0.667 ? (<RiCloseCircleFill />) : (<BsCheckCircleFill />)}</span> </div>
+                                                                    </Card.Text>
+                                                                    <Card.Text>
+                                                                        <p className='mb-2'>Language</p>
+                                                                        <Form.Select disabled size="sm">
+                                                                            <option> <p>{posters.iso_639_1}</p> </option>
+                                                                        </Form.Select>
+                                                                    </Card.Text>
+                                                                </Card.Body>
+                                                            </Card>
+                                                        ))}
+                                                    </div>
+                                                </TabPanel>
+                                            }
+
+                                            {
+                                                imagesPostersLanguageSv.length > 0 &&
+                                                <TabPanel value={value} index={24}>
+                                                    <div className="col-12 d-flex flex-wrap justify-content-center gap-5">
+                                                        {imagesPostersLanguageSv.length > 0 && imagesPostersLanguageSv.map((posters) => (
+                                                            <Card className="col-3 bg-dark text-light border">
+                                                                <img className='col-12' src={posters.file_path ? `https://image.tmdb.org/t/p/w600_and_h900_bestv2${posters.file_path}` : `https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-4-user-grey-d8fe957375e70239d6abdd549fd7568c89281b2179b5f4470e2e12895792dfa5.svg`} />
+                                                                <Card.Header className='border d-flex justify-content-between'>
+                                                                    <span>info</span>
+                                                                    <span><HiLockClosed /></span>
+                                                                </Card.Header>                                        <Card.Body>
+                                                                    <Card.Text className='d-flex flex-column'>
+                                                                        <span>Primary? <MdDisabledByDefault className='rounded-circle' /></span>
+                                                                    </Card.Text>
+                                                                    <Card.Text className='d-flex flex-column'>
+                                                                        <span>Size</span>
+                                                                        <div className='text-info'>{posters.width}x{posters.height} <span className='text-light'>{posters.aspect_ratio > 0.667 ? (<RiCloseCircleFill />) : (<BsCheckCircleFill />)}</span> </div>
+                                                                    </Card.Text>
+                                                                    <Card.Text>
+                                                                        <p className='mb-2'>Language</p>
+                                                                        <Form.Select disabled size="sm">
+                                                                            <option> <p>{posters.iso_639_1}</p> </option>
+                                                                        </Form.Select>
+                                                                    </Card.Text>
+                                                                </Card.Body>
+                                                            </Card>
+                                                        ))}
+                                                    </div>
+                                                </TabPanel>
+                                            }
+
+                                            {
+                                                imagesPostersLanguageTh.length > 0 &&
+                                                <TabPanel value={value} index={25}>
+                                                    <div className="col-12 d-flex flex-wrap justify-content-center gap-5">
+                                                        {imagesPostersLanguageTh.length > 0 && imagesPostersLanguageTh.map((posters) => (
+                                                            <Card className="col-3 bg-dark text-light border">
+                                                                <img className='col-12' src={posters.file_path ? `https://image.tmdb.org/t/p/w600_and_h900_bestv2${posters.file_path}` : `https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-4-user-grey-d8fe957375e70239d6abdd549fd7568c89281b2179b5f4470e2e12895792dfa5.svg`} />
+                                                                <Card.Header className='border d-flex justify-content-between'>
+                                                                    <span>info</span>
+                                                                    <span><HiLockClosed /></span>
+                                                                </Card.Header>                                        <Card.Body>
+                                                                    <Card.Text className='d-flex flex-column'>
+                                                                        <span>Primary? <MdDisabledByDefault className='rounded-circle' /></span>
+                                                                    </Card.Text>
+                                                                    <Card.Text className='d-flex flex-column'>
+                                                                        <span>Size</span>
+                                                                        <div className='text-info'>{posters.width}x{posters.height} <span className='text-light'>{posters.aspect_ratio > 0.667 ? (<RiCloseCircleFill />) : (<BsCheckCircleFill />)}</span> </div>
+                                                                    </Card.Text>
+                                                                    <Card.Text>
+                                                                        <p className='mb-2'>Language</p>
+                                                                        <Form.Select disabled size="sm">
+                                                                            <option> <p>{posters.iso_639_1}</p> </option>
+                                                                        </Form.Select>
+                                                                    </Card.Text>
+                                                                </Card.Body>
+                                                            </Card>
+                                                        ))}
+                                                    </div>
+                                                </TabPanel>
+                                            }
+
+
+                                            {
+                                                imagesPostersLanguageTr.length > 0 &&
+                                                <TabPanel value={value} index={26}>
+                                                    <div className="col-12 d-flex flex-wrap justify-content-center gap-5">
+                                                        {imagesPostersLanguageTr.length > 0 && imagesPostersLanguageTr.map((posters) => (
+                                                            <Card className="col-3 bg-dark text-light border">
+                                                                <img className='col-12' src={posters.file_path ? `https://image.tmdb.org/t/p/w600_and_h900_bestv2${posters.file_path}` : `https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-4-user-grey-d8fe957375e70239d6abdd549fd7568c89281b2179b5f4470e2e12895792dfa5.svg`} />
+                                                                <Card.Header className='border d-flex justify-content-between'>
+                                                                    <span>info</span>
+                                                                    <span><HiLockClosed /></span>
+                                                                </Card.Header>                                        <Card.Body>
+                                                                    <Card.Text className='d-flex flex-column'>
+                                                                        <span>Primary? <MdDisabledByDefault className='rounded-circle' /></span>
+                                                                    </Card.Text>
+                                                                    <Card.Text className='d-flex flex-column'>
+                                                                        <span>Size</span>
+                                                                        <div className='text-info'>{posters.width}x{posters.height} <span className='text-light'>{posters.aspect_ratio > 0.667 ? (<RiCloseCircleFill />) : (<BsCheckCircleFill />)}</span> </div>
+                                                                    </Card.Text>
+                                                                    <Card.Text>
+                                                                        <p className='mb-2'>Language</p>
+                                                                        <Form.Select disabled size="sm">
+                                                                            <option> <p>{posters.iso_639_1}</p> </option>
+                                                                        </Form.Select>
+                                                                    </Card.Text>
+                                                                </Card.Body>
+                                                            </Card>
+                                                        ))}
+                                                    </div>
+                                                </TabPanel>
+                                            }
+
+                                            {
+                                                imagesPostersLanguageUk.length > 0 &&
+                                                <TabPanel value={value} index={27}>
+                                                    <div className="col-12 d-flex flex-wrap justify-content-center gap-5">
+                                                        {imagesPostersLanguageUk.length > 0 && imagesPostersLanguageUk.map((posters) => (
+                                                            <Card className="col-3 bg-dark text-light border">
+                                                                <img className='col-12' src={posters.file_path ? `https://image.tmdb.org/t/p/w600_and_h900_bestv2${posters.file_path}` : `https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-4-user-grey-d8fe957375e70239d6abdd549fd7568c89281b2179b5f4470e2e12895792dfa5.svg`} />
+                                                                <Card.Header className='border d-flex justify-content-between'>
+                                                                    <span>info</span>
+                                                                    <span><HiLockClosed /></span>
+                                                                </Card.Header>                                        <Card.Body>
+                                                                    <Card.Text className='d-flex flex-column'>
+                                                                        <span>Primary? <MdDisabledByDefault className='rounded-circle' /></span>
+                                                                    </Card.Text>
+                                                                    <Card.Text className='d-flex flex-column'>
+                                                                        <span>Size</span>
+                                                                        <div className='text-info'>{posters.width}x{posters.height} <span className='text-light'>{posters.aspect_ratio > 0.667 ? (<RiCloseCircleFill />) : (<BsCheckCircleFill />)}</span> </div>
+                                                                    </Card.Text>
+                                                                    <Card.Text>
+                                                                        <p className='mb-2'>Language</p>
+                                                                        <Form.Select disabled size="sm">
+                                                                            <option> <p>{posters.iso_639_1}</p> </option>
+                                                                        </Form.Select>
+                                                                    </Card.Text>
+                                                                </Card.Body>
+                                                            </Card>
+                                                        ))}
+                                                    </div>
+                                                </TabPanel>
+                                            }
+
+                                            {
+                                                imagesPostersLanguageVi.length > 0 &&
+                                                <TabPanel value={value} index={28}>
+                                                    <div className="col-12 d-flex flex-wrap justify-content-center gap-5">
+                                                        {imagesPostersLanguageVi.length > 0 && imagesPostersLanguageVi.map((posters) => (
+                                                            <Card className="col-3 bg-dark text-light border">
+                                                                <img className='col-12' src={posters.file_path ? `https://image.tmdb.org/t/p/w600_and_h900_bestv2${posters.file_path}` : `https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-4-user-grey-d8fe957375e70239d6abdd549fd7568c89281b2179b5f4470e2e12895792dfa5.svg`} />
+                                                                <Card.Header className='border d-flex justify-content-between'>
+                                                                    <span>info</span>
+                                                                    <span><HiLockClosed /></span>
+                                                                </Card.Header>                                        <Card.Body>
+                                                                    <Card.Text className='d-flex flex-column'>
+                                                                        <span>Primary? <MdDisabledByDefault className='rounded-circle' /></span>
+                                                                    </Card.Text>
+                                                                    <Card.Text className='d-flex flex-column'>
+                                                                        <span>Size</span>
+                                                                        <div className='text-info'>{posters.width}x{posters.height} <span className='text-light'>{posters.aspect_ratio > 0.667 ? (<RiCloseCircleFill />) : (<BsCheckCircleFill />)}</span> </div>
+                                                                    </Card.Text>
+                                                                    <Card.Text>
+                                                                        <p className='mb-2'>Language</p>
+                                                                        <Form.Select disabled size="sm">
+                                                                            <option> <p>{posters.iso_639_1}</p> </option>
+                                                                        </Form.Select>
+                                                                    </Card.Text>
+                                                                </Card.Body>
+                                                            </Card>
+                                                        ))}
+                                                    </div>
+                                                </TabPanel>
+                                            } */}
